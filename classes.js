@@ -9,16 +9,6 @@ class Dog {
     greeting() {
         console.log(`HI, my name is ${this.name} and I am an ${this.age} year old ${this.breed}!`);
     }
-
-    getHit() {
-        if (this.legs > 1) {
-            this.legs -= 1;
-            console.log(`${this.name} got hit and lost a leg. ${this.name} has ${this.legs} more legs`);
-        } else {
-            this.legs -= 1;
-            console.log(`${this.name} got hit and lost a leg. That was ${this.name}'s last leg. How is that even possible`)
-        }
-    }
 }
 
 const dog1 = new Dog("Buddy", "Golden Retriever", 5);

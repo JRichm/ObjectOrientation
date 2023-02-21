@@ -33,3 +33,31 @@ meal.drink = newFav;
 console.log(meal);
 
 const { drink: drink2, appetizer: app2, desser: des2, entree: entree2 } = meal2;
+
+//loop through meal2
+for (let key in meal2){
+
+    // if the key = dessert, update the value to be churros and print to console
+    if (key === 'dessert') {
+        meal2.dessert = "Churros";
+        console.log(meal2[key]);
+
+    // else, print the value
+    } else {
+        console.log(key);
+    }
+}
+
+let teams = {
+    teamOne: ['ryan', 'alex', 'wyatt', 'tj'],
+    teamTwo: ['henry', 'cole', 'charlie', 'zeke'],
+    teamThree: ['porter', 'blake', 'june', 'owen'],
+    teamFour: ['brian', 'riley', 'ezra', 'jordan'],
+    teamFive: ['grey', 'milo', 'mckay', 'leo']
+  };
+
+  teams.teamSix = ['felix', 'jordan', 'tyler', 'kyle'];
+  console.log(teams);
+
+  delete teams.teamFour;
+  console.log(teams);
